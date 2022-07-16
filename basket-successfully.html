@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шаблон</title>
+  <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+  <link media="all" rel="stylesheet" href="assets/css/styles.min.css">
+  <link media="all" rel="stylesheet" href="assets/css/basket/basket.css">
+</head>
+
+<body class="scroll">
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+  <div class="wrapper">
+    <button type="button" class="btn-top hide">
+        <img src="/rustruck/assets/images/top-icon.svg" alt="">
+    </button>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="index.html" class="header__logo">
+                    <img src="/rustruck/assets/images/logo.svg" alt="Рустрак">
+                    <span>производство и продажа автоспецтехники</span>
+                </a>
+                <div class="header__top-right">
+                    <div class="header__timework">
+                        <div class="header__timework-wrap">
+                            <span class="header__timework-name">Время работы</span>
+                            <div class="header__timework-time">
+                                <span>Пн-пт: с 8:00 до 18:00</span>
+                                <span>Сб-вс: с 10:00 до 16:00</span>
+                            </div>
+                        </div>
+                        <span class="header__timework-addres">
+                            г. Нижний Новгород ул. Торфяная, 35
+                        </span>
+                    </div>
+                    <div class="header__phones">
+                        <div class="header__phones-wrap">
+                            <span>Для регионов: <a href="tel:88007777210">8 (800) 77-77-210</a></span>
+                            <span>Нижний Новгород: <a href="tel:88312250055">8 (831) 225-00-55</a></span>
+                        </div>
+                        <button type="button" class="header__phones-icon js-show-popup" data-trigger="call-popup">
+                            <img src="/rustruck/assets/images/phone.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__bottom-left">
+                    <div class="header__btn-wrap js-menu" data-action="all">
+                        <button class="burger">
+                            <span class="burger__line"></span>
+                            <span class="header__btn-name">Каталог</span>
+                        </button>
+                    </div>
+                    <a href="#" class="header__logo header__logo--fixed">
+                        <img src="/rustruck/assets/images/logo.svg" alt="">
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                           <li class="nav__item js-menu" data-action="about-menu">
+                             <button class="nav__link">
+                              О нас
+                              <span class="triangle"></span>
+                             </button>
+                           </li>
+                           <li class="nav__item js-menu" data-action="media">
+                             <button class="nav__link">
+                              Медиа
+                              <span class="triangle"></span>
+                             </button>
+                           </li>
+                           <li class="nav__item">
+                             <a class="nav__link" href="service.html">
+                              Сервис
+                             </a>
+                           </li>
+                           <li class="nav__item">
+                              <a class="nav__link" href="news-catalog.html">
+                                  Новости
+                              </a>
+                            </li>
+                            <li class="nav__item">
+                              <a class="nav__link" href="contacts.html">
+                                  Контакты
+                              </a>
+                            </li>
+                        </ul>
+                      </nav>
+                </div>
+                <div class="header__bottom-right">
+                    <div class="header__search">
+                        <form class="header-search" id="header-search" method="" action="#" name="header-search">
+                            <div class="header-search__wrap">
+                                <input class="header-search__input" type="text">
+                                <button class="header-search__btn">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 14.0066C5 9.03239 8.94838 5 13.819 5C18.6896 5 22.6379 9.03239 22.6379 14.0066C22.6379 16.1467 21.9071 18.1124 20.6864 19.6577L26.7077 25.3784C27.0784 25.7306 27.0993 26.3229 26.7545 26.7015C26.4097 27.08 25.8296 27.1014 25.459 26.7493L19.3932 20.9863C17.874 22.2533 15.9334 23.0132 13.819 23.0132C8.94839 23.0132 5 18.9808 5 14.0066ZM13.7552 21.5798C17.9412 21.5798 21.3347 18.1863 21.3347 14.0003C21.3347 9.81433 17.9412 6.4209 13.7552 6.4209C9.56921 6.4209 6.17578 9.81433 6.17578 14.0003C6.17578 18.1863 9.56921 21.5798 13.7552 21.5798Z" fill="black"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="header__buttons">
+                        <button  class="btn btn-option btn__search">поиск</button>
+                        <a href="basket.html" class="btn btn-option btn__cart">
+                            <img src="/rustruck/assets/images/cart.svg">
+                            <span class="option-counter">99+</span>
+                        </a>
+                        <a href="favorites.html" class="btn btn-option btn__favorite">
+                            <img src="/rustruck/assets/images/favorite.svg">
+                            <span class="option-counter">99+</span>
+                        </a>
+                        <button type="button" class="header__phones-icon js-show-popup" data-trigger="call-popup">
+                            <img src="/rustruck/assets/images/phone.svg">
+                        </button>
+                    </div>
+                </div>
+           
+            </div>
+        </div>
+        <div class="header__menu ">
+               <div class="header__menu-wrapper">
+                <div class="header__menu-container">
+                    <div class="header__menu-wrap">
+                        <div class="header__menu-item">
+                            <span class="header__menu-item__name">
+                                Категории
+                            </span>
+                            <ul class="header__menu-list">
+                                <li>
+                                    <a href="#" class="header__menu-link">Краны-манипуляторы</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Автофургоны</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Автоэвакуаторы</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Автогидроподъёмники</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Бортовые Автомобили</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Самосвалы</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Автоцистерны</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Автотопливозаправщики</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Крюковые погрузчики</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Продукция в наличии</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Шасси</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link header__menu-link--all">Смотреть все категории</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__menu-item">
+                            <span class="header__menu-item__name">
+                                О нас
+                            </span>
+                            <ul class="header__menu-list">
+                                <li>
+                                    <a href="about-company.html" class="header__menu-link">О компании ООО «Рустрак»</a>
+                                </li>
+                                <li>
+                                    <a href="news-catalog.html" class="header__menu-link">Новости</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Наши партнёры</a>
+                                </li>
+                                <li>
+                                    <a href="production.html" class="header__menu-link">Производство</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Поставщикам и партнёрам</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Сертификаты</a>
+                                </li>
+                                <li>
+                                    <a href="vacancies.html" class="header__menu-link">Вакансии</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__menu-link">Кредит и лизинг</a>
+                                </li>
+                            </ul>
+                     
+                        </div>
+                        <div class="header__menu-item">
+                            <div class="header__menu-item__wrap">
+                                <span class="header__menu-item__name">
+                                    Медиа
+                                </span>
+                                <ul class="header__menu-list">
+                                    <li>
+                                        <a href="#" class="header__menu-link">Фотогалерея</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__menu-link">Видео</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__menu-link">Рекламные материалы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="header__menu-links">
+                                <li>
+                                    <a href="service.html" class="header__menu-link header__menu-link--bold">Сервис</a>
+                                </li>
+                                <li>
+                                    <a href="news-catalog.html" class="header__menu-link header__menu-link--bold">Новости</a>
+                                </li>
+                                <li>
+                                    <a href="contacts.html" class="header__menu-link header__menu-link--bold">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu-info">
+                    <p>
+                        г. Нижний Новгород ул. Торфяная, 35
+                    </p>
+                    <p>
+                        Для регионов: 8 (800) 77-77-210
+                    </p>
+                    <p>
+                        Нижний Новгород: 8 (831) 225-00-55
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+      <section class="basketsuccess-section">
+          <div class="container">
+              <h2 class="page-title">Корзина</h2>
+              <p class="basket-text">Ваш заказ успешно оформлен!</p>
+              <p class="basket-text"> Наш менеджер свяжется с вами в ближайшее время для уточнения деталей!</p>
+          </div>
+      </section>
+      <section class="main-feedback">
+        <div class="container">
+            <div class="feedback-wrapper active">
+                <div class="feedback-wrapper__main">
+                    <div class="feedback-wrapper__header">
+                        <h2 class="feedback-title">
+                            ОСТАЛИСЬ ВОПРОСЫ?
+                        </h2>
+                        <p class="feedback-text">
+                            Оставьте свои контактные данные, и мы презвоним вам в ближайшее время
+                        </p>
+                    </div>
+                    <div class="feedback-form">
+                        <form class="form form-feedback" id="feedback-form" method="POST" action="#" name="feedback-form">
+                            <div class="form__body">
+                                <div class="form__group">
+                                    <label class="form__name" for="feedback-name">Ваше имя</label>
+                                    <input class="form__input" type="text" name="feedback-name" id="feedback-name" placeholder="Иван Иванов">
+                                </div>
+                                <div class="form__group">
+                                    <label class="form__name" for="feedback-phone">Телефон</label>
+                                    <input class="form__input" required="required" type="tel" name="feedback-phone" id="feedback-phone" placeholder="+7"  data-mask="tel" pattern="^(\\s*)?(\\+)?([- _():=+]?(\\s*)?(\\s*)?\\d[- _():=+]?(\\s*)){11,50}(\\s*)?$">
+                                </div>
+                              <button type="button" class="btn primary">Отправить</button>            
+                            </div>
+                          </form>
+                          <p>Нажимая на кнопку отправить Вы соглашаетесь на обработку Ваших персональных данных компание ООО «Рустрак»</p>
+                    </div>
+                </div>
+                <div class="feedback-img">
+                    <img class="feedback-bg" src="/rustruck/assets/images/feedback-truck.png" alt="">
+                </div>
+            </div>
+            <div class="feedback-successfully">
+              <h2 class="feedback-title">
+                  Успешно!
+              </h2>
+              <p class="feedback-text">
+                  Ваши данные направлену нашему менеджеру. Мы свяжемся с вами в ближайшее время!
+              </p>
+          </div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-left">
+                    <span class="footer__top-text">Тел/факс: <a href="tel:88312250055">8 (831) 225-00-55</a></span>
+                    <span class="footer__top-text"> Email: <a href="mailto:info@rtrf.ru">info@rtrf.ru</a></span>
+                    <address class="footer__top-text">Нижний Новгород, ул. Торфяная, 35</address>
+                    <button type="button" class="btn primary js-show-popup" data-trigger="call-popup  ">Заказать звонок</button>
+                </div>
+                <div class="footer__nav">
+                    <div class="footer__nav-item">
+                        <button class="footer__nav-control" aria-expanded="false">
+                            <span class="footer__nav-title">
+                                Название блока
+                            </span>
+                        </button>
+                        <ul class="footer__nav-list">
+                            <li>
+                                <a href="#">
+                                    Категории
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Избранное
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    О компании
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Вакансии
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-item">
+                        <button class="footer__nav-control" aria-expanded="false">
+                            <span class="footer__nav-title">
+                                Название блока
+                            </span>
+                        </button>
+                        <ul class="footer__nav-list">
+                            <li>
+                                <a href="#">
+                                    Категории
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Избранное
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    О компании
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Вакансии
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-item">
+                        <button class="footer__nav-control" aria-expanded="false">
+                            <span class="footer__nav-title">
+                                Название блока
+                            </span>
+                        </button>
+                        <ul class="footer__nav-list">
+                            <li>
+                                <a href="#">
+                                    Категории
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Избранное
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    О компании
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Вакансии
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-left">
+                    <p class="footer-text">
+                        2009 - 2021 © Rus - Trucks
+                    </p>
+                    <p class="footer-text">
+                        Информация на сайте не является публичной офертой и носит исключительно информационный характер
+                    </p>
+                </div>
+                <div class="footer__bottom-right">
+                    <ul class="footer__socials">
+                        <li class="footer__socials-item">
+                            <a href="#">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <rect x="0.5" y="0.5" width="31" height="31" rx="3.5" stroke="white"/>
+                                    <path d="M21.25 7H18.3864C17.1206 7 15.9066 7.47411 15.0115 8.31802C14.1165 9.16193 13.6136 10.3065 13.6136 11.5V14.2H10.75V17.8H13.6136V25H17.4318V17.8H20.2955L21.25 14.2H17.4318V11.5C17.4318 11.2613 17.5324 11.0324 17.7114 10.8636C17.8904 10.6948 18.1332 10.6 18.3864 10.6H21.25V7Z" fill="white"/>
+                                    </g>
+                                </svg>
+    
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a href="#">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <rect x="0.5" y="0.5" width="31" height="31" rx="3.5" stroke="white"/>
+                                    <path d="M25 8.50841C24.2165 9.07307 23.349 9.50495 22.4309 9.78741C21.9382 9.20852 21.2833 8.79822 20.5548 8.612C19.8264 8.42578 19.0596 8.47262 18.3581 8.74619C17.6565 9.01977 17.0542 9.50686 16.6324 10.1416C16.2107 10.7764 15.9899 11.5281 16 12.2953V13.1312C14.5622 13.1693 13.1374 12.8435 11.8526 12.1828C10.5679 11.5221 9.46299 10.547 8.63636 9.34435C8.63636 9.34435 5.36364 16.8679 12.7273 20.2117C11.0422 21.3803 9.03495 21.9663 7 21.8836C14.3636 26.0633 23.3636 21.8836 23.3636 12.2702C23.3629 12.0373 23.341 11.805 23.2982 11.5763C24.1332 10.735 24.7225 9.67264 25 8.50841Z" fill="white"/>
+                                    </g>
+                                </svg>
+    
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a href="#">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <rect x="0.5" y="0.5" width="31" height="31" rx="3.5" stroke="white"/>
+                                    <path d="M22.75 15.125V12.875H21.625V15.125H19.375V16.25H21.625V18.5H22.75V16.25H25V15.125H22.75Z" fill="white"/>
+                                    <path d="M12.5 15.4V17.6H15.6119C15.1576 18.8804 13.9344 19.8 12.5 19.8C10.6806 19.8 9.2 18.3194 9.2 16.5C9.2 14.6806 10.6806 13.2 12.5 13.2C13.2887 13.2 14.0477 13.4827 14.6373 13.9964L16.0827 12.3376C15.0927 11.4752 13.8211 11 12.5 11C9.4673 11 7 13.4673 7 16.5C7 19.5327 9.4673 22 12.5 22C15.5327 22 18 19.5327 18 16.5V15.4H12.5Z" fill="white"/>
+                                    </g>
+                                </svg>
+    
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a href="#">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <rect x="0.5" y="0.5" width="31" height="31" rx="3.5" stroke="white"/>
+                                    <path d="M20.2945 10.9038C19.8526 10.9038 19.4945 11.262 19.4945 11.7038C19.4945 12.1457 19.8526 12.5038 20.2945 12.5038H20.302C20.7438 12.5038 21.102 12.1457 21.102 11.7038C21.102 11.262 20.7438 10.9038 20.302 10.9038H20.2945Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6076 12.0842C15.7911 11.9631 14.9571 12.1026 14.2244 12.4828C13.4917 12.863 12.8975 13.4645 12.5264 14.2019C12.1553 14.9392 12.0261 15.7748 12.1572 16.5898C12.2884 17.4048 12.6732 18.1577 13.2569 18.7414C13.8406 19.3251 14.5935 19.7099 15.4085 19.8411C16.2235 19.9722 17.0591 19.843 17.7964 19.4719C18.5338 19.1008 19.1353 18.5066 19.5155 17.7739C19.8957 17.0412 20.0352 16.2072 19.9141 15.3907C19.7906 14.5577 19.4025 13.7866 18.8071 13.1912C18.2117 12.5958 17.4406 12.2077 16.6076 12.0842ZM14.9613 13.903C15.3953 13.6778 15.8893 13.5952 16.3729 13.6669C16.8663 13.7401 17.323 13.9699 17.6757 14.3226C18.0284 14.6753 18.2582 15.132 18.3314 15.6254C18.4031 16.109 18.3205 16.603 18.0953 17.037C17.8701 17.471 17.5138 17.8229 17.0771 18.0427C16.6403 18.2626 16.1454 18.3391 15.6627 18.2614C15.1799 18.1837 14.734 17.9558 14.3882 17.6101C14.0425 17.2643 13.8146 16.8184 13.7369 16.3356C13.6592 15.8529 13.7357 15.358 13.9556 14.9212C14.1754 14.4845 14.5273 14.1282 14.9613 13.903Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.38672 12.0944C7.38672 9.4955 9.49354 7.38867 12.0924 7.38867H19.9039C22.5028 7.38867 24.6096 9.4955 24.6096 12.0944V19.9058C24.6096 20.8549 24.3286 21.7384 23.8454 22.4776C23.8274 22.6237 23.7355 22.7468 23.6081 22.8084C22.7466 23.9062 21.4076 24.6116 19.9039 24.6116H12.0924C9.49354 24.6116 7.38672 22.5047 7.38672 19.9058V12.0944ZM12.0924 8.98867C10.3772 8.98867 8.98672 10.3792 8.98672 12.0944V19.9058C8.98672 21.6211 10.3772 23.0116 12.0924 23.0116H19.9039C21.6191 23.0116 23.0096 21.6211 23.0096 19.9058V12.0944C23.0096 10.3792 21.6191 8.98867 19.9039 8.98867H12.0924Z" fill="white"/>
+                                    </g>
+                                </svg>
+    
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a href="#">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.4">
+                                <rect x="0.5" y="0.5" width="31" height="31" rx="3.5" stroke="white"/>
+                                <g clip-path="url(#clip0_1622_24085)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0494 10.2062C24.3281 10.4958 24.526 10.8544 24.6232 11.2458C24.8827 12.6962 25.0087 14.1677 24.9995 15.6415C25.0047 17.0933 24.8787 18.5425 24.6232 19.9712C24.526 20.3626 24.3281 20.7212 24.0494 21.0108C23.7707 21.3004 23.4211 21.5108 23.036 21.6206C21.6288 22 16 22 16 22C16 22 10.3712 22 8.964 21.6206C8.58669 21.5166 8.24239 21.3162 7.96435 21.0388C7.68632 20.7614 7.48395 20.4164 7.37681 20.0372C7.11727 18.5868 6.99129 17.1153 7.00047 15.6415C6.9933 14.1787 7.11927 12.7184 7.37681 11.2788C7.474 10.8874 7.67193 10.5288 7.95061 10.2392C8.22929 9.94955 8.57886 9.7392 8.964 9.62937C10.3712 9.25 16 9.25 16 9.25C16 9.25 21.6288 9.25 23.036 9.59638C23.4211 9.70622 23.7707 9.91656 24.0494 10.2062ZM18.6103 15.6559L14.2978 18.1084V13.2034L18.6103 15.6559Z" fill="white"/>
+                                </g>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1622_24085">
+                                <rect width="18" height="18" fill="white" transform="translate(7 7)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <span class="footer-text">Разработка R-top</span>
+        </div>
+    </footer>
+    <div class="overlay js-overlay"></div>
+
+    <div class="popup popup--call js-popup" data-popup="call-popup">
+      <button type="button" class="popup__close js-popup-close">
+        <span>
+        </span>
+      </button>
+        <div class="popup__wrap">
+            <div class="popup__head">
+              <h3 class="popup__title">
+                Заказать звонок
+              </h3>
+              <p class="popup__subtitle">
+                Наш менеджер свяжется с вами в ближайшее время
+              </p>
+            </div>
+            <div class="popup__form">
+              <form class="form form-send form--send" id="form-contact" method="POST" action="#" name="form-contact" novalidate>
+                <div class="form__body">
+                  <div class="form__group">
+                    <label class="form__name" for="name-modal">Ваше имя</label>
+                    <input class="form__input" type="text" name="name-modal" id="name-modal" placeholder="Иван Иванов" required>
+                    <span class="form__error-text">Поле обязательно для заполнения</span>
+                  </div>
+                  <div class="form__group form--invalid">
+                    <label class="form__name" for="phone-modal">Телефон</label>
+                    <input class="form__input" type="tel" name="phone-ui" id="phone-modal" placeholder="+7"
+                      data-mask="tel" pattern="^(\\s*)?(\\+)?([- _():=+]?(\\s*)?(\\s*)?\\d[- _():=+]?(\\s*)){11,50}(\\s*)?$" required>
+                    <span class="form__error-text">Поле обязательно для заполнения</span>
+                  </div>
+                  <div class="form__checkbox">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="custom-checkbox__field" id="personal-modal">
+                      <span class="custom-checkbox__content"></span>
+                      <span class="custom-checkbox__text">Я согласен <span> на обработку персональных данных компанией ООО «РусТрак»</span>
+                    </span>
+                  </label>
+                  </div>
+                </div>
+                <button type="button" class="btn primary js-show-popup" data-trigger="call-popup-successfully">Оставить заявку</button>
+              </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="popup popup--successfully js-popup" data-popup="call-popup-successfully">
+      <button type="button" class="popup__close js-popup-close">
+        <span>
+        </span>
+      </button>
+        <div class="popup__wrap">
+            <div class="popup__head">
+              <h3 class="popup__title">
+                Успешно
+              </h3>
+              <p class="popup__subtitle">
+                Ваши данные направлены нашему менеджеру. Мы свяжемся с вами в ближайшее время!
+              </p>
+            </div>
+            <button type="button" class="btn tertiary js-popup-close">Закрыть</button>
+        </div>
+    </div>
+
+    <div class="popup popup--kp js-popup" data-popup="kp-popup">
+      <button type="button" class="popup__close js-popup-close">
+        <span>
+        </span>
+      </button>
+        <div class="popup__wrap">
+            <div class="popup__head">
+              <h3 class="popup__title">
+                Получить коммерческое предложение
+              </h3>
+            </div>
+            <div class="popup__form">
+              <form class="form form-send form--send" id="form-kp" method="POST" action="#" name="form-contact" novalidate>
+                <div class="form__body">
+                  <div class="form__group">
+                    <label class="form__name" for="name-kp">Ваше имя</label>
+                    <input class="form__input" type="text" name="name-kp" id="name-kp" placeholder="Иван Иванов" required>
+                    <span class="form__error-text">Поле обязательно для заполнения</span>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__name" for="mail-kp">E-mail</label>
+                    <input class="form__input" type="mail" name="mail-kp" id="mail-kp" placeholder="your@mail.com"
+                      data-mask="email" required>
+                      <span class="form__error-text">Поле обязательно для заполнения</span>
+                  </div>
+                  <div class="form__group form--invalid">
+                    <label class="form__name" for="phone-kp">Телефон</label>
+                    <input class="form__input test" type="tel" name="phone-kp" id="phone-kp" placeholder="+7"
+                      data-mask="tel" pattern="^(\\s*)?(\\+)?([- _():=+]?(\\s*)?(\\s*)?\\d[- _():=+]?(\\s*)){11,50}(\\s*)?$" required>
+                    <span class="form__error-text">Поле обязательно для заполнения</span>
+                  </div>
+                  <div class="form__checkbox">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="custom-checkbox__field" id="personal-kp">
+                      <span class="custom-checkbox__content"></span>
+                      <span class="custom-checkbox__text">Я согласен <span> на обработку персональных данных компанией ООО «РусТрак»</span>
+                    </span>
+                  </label>
+                  </div>
+                </div>
+                <button type="button" class="btn primary js-show-popup" data-trigger="call-popup-successfully">Получить КП</button>
+              </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="popup popup--notify js-popup" data-popup="notify-popup">
+      <button type="button" class="popup__close js-popup-close">
+        <span>
+        </span>
+      </button>
+        <div class="popup__wrap">
+            <div class="popup__head">
+              <h3 class="popup__title">
+                Уведомить о поступлении
+              </h3>
+              <div class="popup__card">
+                <div class="popup__img">
+                   <img src="/rustruck/assets/images/product-img.jpg" alt="HYUNDAI HD 78 c промтоварным фургоном">
+                </div>
+                <span class="popup__card-title">HYUNDAI HD 78 c промтоварным фургоном</span>
+              </div>
+            </div>
+            <div class="popup__form">
+              <form class="form form-send form--send" id="form-notify" method="POST" action="#" name="form-notify" novalidate>
+                <div class="form__body">
+                    <div class="form__group">
+                      <label class="form__name" for="mail-kp">E-mail</label>
+                      <input class="form__input" type="mail" name="notify-name" id="notify-mail" placeholder="your@mail.com"
+                        data-mask="email" required>
+                        <span class="form__error-text">Поле обязательно для заполнения</span>
+                    </div>
+                  <div class="form__checkbox">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="custom-checkbox__field" id="notify-checked">
+                      <span class="custom-checkbox__content"></span>
+                      <span class="custom-checkbox__text">Я согласен <span> на обработку персональных данных компанией ООО «РусТрак»</span>
+                    </span>
+                  </label>
+                  </div>
+                </div>
+                <button type="button" class="btn primary js-show-popup" data-trigger="notify-popup-successfully">Уведомить</button>
+              </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup popup--successfully popup--successfully-second js-popup" data-popup="notify-popup-successfully">
+      <button type="button" class="popup__close js-popup-close">
+        <span>
+        </span>
+      </button>
+        <div class="popup__wrap">
+            <div class="popup__head">
+              <h3 class="popup__title">
+                Успешно
+              </h3>
+              <p class="popup__subtitle">
+                Когда товар снова будет доступен для заказа, мы отправим вам письмо-уведомление на почту
+              </p>
+            </div>
+            <button type="button" class="btn tertiary js-popup-close">Закрыть</button>
+        </div>
+    </div>
+
+    <div class="popup popup--application js-popup" data-popup="application-popup">
+      <button type="button" class="popup__close js-popup-close">
+        <span>
+        </span>
+      </button>
+        <div class="popup__wrap">
+            <div class="popup__head">
+              <h3 class="popup__title">
+                Оставить заявку
+              </h3>
+              <p class="popup__subtitle">на вакансию «Специалист по охране труда»</p>
+            </div>
+            <div class="popup__form">
+              <form class="form form-send form--send" id="form-application" method="POST" action="#" name="form-contact" novalidate>
+                <div class="form__body">
+                  <div class="form__group">
+                    <label class="form__name" for="name-application">Ваше имя</label>
+                    <input class="form__input" type="text" name="name-application" id="name-application" placeholder="Иван Иванов" required>
+                    <span class="form__error-text">Поле обязательно для заполнения</span>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__name" for="mail-application">E-mail</label>
+                    <input class="form__input" type="mail" name="mail-application" id="mail-application" placeholder="your@mail.com"
+                      data-mask="email" required>
+                      <span class="form__error-text">Поле обязательно для заполнения</span>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__name" for="phone-application">Телефон</label>
+                    <input class="form__input test" type="tel" name="phone-application" id="phone-application" placeholder="+7"
+                      data-mask="tel" pattern="^(\\s*)?(\\+)?([- _():=+]?(\\s*)?(\\s*)?\\d[- _():=+]?(\\s*)){11,50}(\\s*)?$" required>
+                    <span class="form__error-text">Поле обязательно для заполнения</span>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__name" for="mail-application">Ссылка на резюме</label>
+                    <input class="form__input" type="text" name="link-application" id="link-application" placeholder="https://..."
+                      required >
+                      <span class="form__error-text">Поле обязательно для заполнения</span>
+                  </div>
+                  <div class="form__checkbox">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="custom-checkbox__field" id="personal-application">
+                      <span class="custom-checkbox__content"></span>
+                      <span class="custom-checkbox__text">Я согласен <span> на обработку персональных данных компанией ООО «РусТрак»</span>
+                    </span>
+                  </label>
+                  </div>
+                </div>
+                <button type="button" class="btn primary">Оставить заявку</button>
+              </form>
+            </div>
+
+        </div>
+    </div>
+
+  </div>
+  <script src="/rustruck/assets/js/vendor.min.js" defer></script>
+  <script src="/rustruck/assets/js/app.js" defer></script>
+</body>
+
+</html>

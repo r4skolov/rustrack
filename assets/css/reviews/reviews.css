@@ -1,0 +1,108 @@
+.reviews-section {
+    padding: 2.4rem 0 20rem 0;
+  }
+  
+  .reviews-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1.6rem;
+  }
+  
+  .reviews-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    grid-column: 6 span;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+  }
+  
+  .reviews-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .reviews-img::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-image: url("../../images/serach-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 29px;
+    width: 29px;
+    height: 29px;
+    opacity: 0;
+  }
+  
+  .reviews-img:hover::before {
+    transition: all 0.3s ease;
+    opacity: 1;
+  }
+  
+  .reviews-img:hover::after {
+    transition: all 0.3s ease;
+    opacity: 1;
+  }
+  
+  .fancybox__container .fancybox__thumbs {
+    display: none;
+  }
+  
+  .fancybox__container .fancybox__button--slideshow {
+    display: none;
+  }
+  
+  .fancybox__container .fancybox__button--fullscreen {
+    display: none;
+  }
+  
+  .fancybox__container .fancybox__button--thumbs {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .section-title {
+      font-size: 4rem;
+    }
+  
+    .section-header {
+      margin-bottom: 3.2rem;
+    }
+  
+    .page-title {
+      font-size: 3.2rem;
+    }
+  
+    .reviews-container {
+      grid-gap: 1.8rem;
+    }
+  
+    .reviews-img {
+      grid-column: 4 span;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .reviews-container {
+      grid-gap: 2.4rem;
+    }
+  
+    .reviews-img {
+      grid-column: 3 span;
+    }
+  }
