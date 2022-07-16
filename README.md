@@ -1,6 +1,6 @@
 # rustrack
 
-## Проект Рустрак.
+## Проект Рустрак
 Корпоративный сайт-каталог состоящий из 20 страниц.
 
 1.<a href="https://r4skolov.github.io/rustruck/index.html">Главная</a><br>
@@ -24,7 +24,7 @@
 19.<a href="https://r4skolov.github.io/rustruck/certificated.html">Сертификаты</a><br>
 20.<a href="https://r4skolov.github.io/rustruck/404.html">404</a><br>
 
-## Технологии.
+## Технологии
 <ul> 
   <li>
     Html (flexbox, grid)
@@ -49,7 +49,7 @@
   </li>
 </ul>
 
-## Задача.
+## Задача
 Сделать верстку страниц под cms 1C-Bitrix.
 Время потраченное на вертску проекта 16 дней.
   
