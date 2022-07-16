@@ -42,7 +42,7 @@
     Библиотеки: swiper-slider (слайдеры), rangeslider (использовался для филтров в каталоге товаров)
   </li>
    <li>
-    Адаптив: mbile-first подход
+    Адаптив: mobile-first подход
   </li>
     <li>
     Figma
